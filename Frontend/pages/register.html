@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="../styles/register.css">
+    <script src="https://kit.fontawesome.com/3af5a307c6.js" crossorigin="anonymous"></script>
+    
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- <img src="./assets/bg2.jpg" alt="error"> -->
+
+    
+        <div id="container">
+      
+
+            <div id="left">
+
+                <div id="leftmaincont">    
+                    <div id="logo" style="margin-top: 5px;">
+                        <img src="../images/logo_glam.png" alt="logo" id="logo_img"> <h3 >GLAM<span class="pinkhub">HUB</span> <br>  SIGN<span class="pinkhub">UP</span></h3>
+                    </div>
+
+
+                    <form id="formcontainer">
+                        <p>First Name</p>
+                        <input type="text" id="first_name" class="rcheck" placeholder="First Name">
+
+                        <p>Last Name</p>
+                        <input type="text" id="last_name" class="rcheck" placeholder="Last Name">
+                        
+                        <p>Gender</p>
+                        <select id="gender" name="gender" class="rcheck">
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                          </select>
+                        
+                        <p>Email</p>
+                        <input type="email" id="email" class="rcheck" placeholder="Enter your email">
+
+
+                        <p>Password</p>
+                        <input type="password" id="password" class="rcheck" placeholder="Enter your password">
+
+                        <div id="checkbox">
+                            <input type="checkbox"> <span>I agree to the <span class="terms"> Terms </span> and <span class="terms"> Privacy Policy</span> </span>
+                        </div>
+                        
+                        <input type="submit" id="continue" value="Continue">
+                    </form>
+                </div>
+            </div>
+
+            <!-- <div id="right">
+                <img src="./assets/login_bg_img.jpg" alt="">
+            </div> -->
+
+        </div>
+    
+</body>  
+</html>
+<script src="../scripts/register.js"></script>

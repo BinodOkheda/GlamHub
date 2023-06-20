@@ -1,0 +1,204 @@
+/* comment */
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap');
+
+
+* {
+    font-family: montserrat, poppins;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+#main {
+    text-align: center;
+    width: 100%;
+   
+
+
+}
+
+#services {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+#img-logo {
+    width: 25%;
+}
+
+
+
+#services img {
+    width: 100%;
+    
+}
+#services h3 {
+    color:  #eb008b;
+}
+#readmore{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+}
+#readmore>#readmore-one {
+    width: 50%;
+    padding-top: 10%;
+   
+}
+#bride-img {
+    width: 50%;
+}
+
+
+
+
+
+@media screen and (max-width:700px) {
+    #services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #readmore {
+        flex-direction: column-reverse;
+        margin: auto;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+
+}
+
+@media screen and (max-width:450px) {
+    #services {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #readmore {
+        flex-direction: column-reverse;
+        margin: auto;
+        margin-top: 80%;
+        margin-left: 20%;
+        text-align: center;
+    }
+}
+/* navbar */
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap');
+
+
+*{
+    font-family: montserrat, poppins;
+    text-decoration: none;
+}
+#navbar {
+    background-color: black;
+    color: white;
+    font-family: font-family, montserrat, poppins;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    height: 10%
+    
+
+}
+#logo{
+    width: 20%;
+    display: flex;
+    margin-left: 5%;
+
+}
+#logo img{
+    width: 60%;
+
+}
+
+#nav2 {
+    display: none;
+    text-align: start;
+    
+}
+#nav2 ul {
+    
+  
+    text-decoration: none;
+   
+}
+#nav2 ul:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#hamburger {
+    display: none;
+}
+.navbar{
+    background-color: red!important;
+    color: white;
+    font-family: font-family, montserrat, poppins;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    /* justify-content: space-between; */
+    height: 10%;
+    padding-bottom: 2%;
+
+}
+.navbar-nav {
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.navbar-brand {
+    width: 20%;
+    /* height: 50px; */
+}
+.navbar-brand img {
+    width: 40%;
+
+}
+
+
+@media screen and (max-width:700px){
+    #navbar{
+        flex-direction: row;
+
+    }
+    #info {
+        flex-direction: row;
+    }
+    #nav2 {
+        position: fixed;
+        width: 100%;
+        top: 10%;
+        /* flex-wrap: wrap; */
+        height: auto;
+    }
+    #hamburger {
+        display: block;
+    }
+}
+@media screen and (max-width:450px){
+    #navbar{
+        flex-wrap: wrap;
+        /* height: auto; */
+        
+    }
+    #info {
+        flex-direction: row;
+    }
+    #hamburger {
+        display: block;
+    }
+}
+
+

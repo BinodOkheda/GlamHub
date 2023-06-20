@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap');
+
+*{
+    text-decoration: none;
+    /* color: #fff; */
+}
+
+body{
+    background-color: #E2E2E2;
+    font-family: montserrat, poppins;
+}
+
+/* .main-div{
+    
+} */
+
+.container{   
+    width: 85%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 35px;
+    background-color: #F2F2F2;
+    padding: 0px 15px;
+}
+
+footer{
+  margin-top: 150px;
+}
+
+.container-fluid{
+  height: 0px;
+  
+}
+
+#img{
+  width: 25%;
+}
+
+
+.heading{
+  padding:10px;
+    font-size: 20px;
+    color: #EB008B;
+}
+
+
+#centerSearch{
+    display: flex;
+    border: 2px solid #ddd;
+    justify-content: space-between;
+    padding:0px 15px ;
+    margin-top: -10px;
+    height: 45px;
+
+}
+
+#centerName{
+    
+    font-size: 18px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: #f1f1f1;
+    width: 98%;
+    border: 2px solid #ddd;
+    overflow: hidden;
+    height: 25px;
+    margin-top: -10px;
+  }
+
+  .search-icon {
+    color: #888;
+    margin-right: 8px;
+    transition: color 0.3s ease;
+  }
+
+  .search-icon:hover {
+    color: #555;
+  }
+
+  .search-input {
+    flex: 1;
+    border: none;
+    background: none;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.3s ease;
+  }
+
+  .search-input:focus {
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .sidebar {
+    width: 200px;
+    padding: 20px;
+  }
+
+  .option {
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 8px;
+    color: #000000;
+    transition: transform 0.2s ease;
+  }
+
+  .option.active {
+    background-color: #EB008B;
+    color: #ffffff;
+    transform: scale(1.1);
+  }
+
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .popup.active {
+    display: block;
+  }
+
+  .popup-content {
+    
+    position: relative;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: -25px;
+    right: 3px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .bodydim{
+    background-color: #888;
+    z-index: 9999;
+  }
+
+ #selectcenter{
+    color: #EB008B;
+ }
+
+ #selectcenter:hover{
+    font-size: 17px;
+ }
+
+ .menuAndList{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+ }
+
+ .menulist{
+    border: 1px solid black;
+    width: 75%;
+ }
+
+ #scrollable-div {
+  width: 96.5%;
+  height: 400px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+#scrollable-div::-webkit-scrollbar {
+  width: 8px;
+}
+
+#scrollable-div::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+#scrollable-div::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+.salon-details {
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.salon-details:hover {
+  background-color: #e0e0e0;
+}
+
+.salon-details h2 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.salon-details p {
+  margin: 5px 0;
+}
+
+
+
+
+
+.services-container {
+  /* Container styles */
+  width: 100%;
+  max-height: 400px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  
+  /* Scrollbar styles */
+  scrollbar-width: thin;
+  scrollbar-color: #888888 #f5f5f5;
+}
+
+/* Track */
+.services-container::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+/* Handle */
+.services-container::-webkit-scrollbar-thumb {
+  background-color: #888888;
+}
+
+/* Handle on hover */
+.services-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+}
+
+
+
+
+
+
+/* Style for the services container */
+#services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Style for each service element */
+.service {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* align-items: center; */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service:hover {
+  background-color: #e0e0e0;
+}
+
+.service-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-name {
+  font-weight: bold;
+  font-size: 21px;
+  color: #EB008B;
+}
+
+.service-desc {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.service-info {
+  display: flex;
+  flex-direction: column; /* Updated to column direction */
+  align-items: flex-end;
+}
+
+.service-price,
+.service-time {
+  font-style: italic;
+}
+
+
+
+.popup-content .search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup-content .search-bar input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.popup-content .search-bar i {
+  margin-left: 5px;
+  color: #888;
+  cursor: pointer;
+}
+

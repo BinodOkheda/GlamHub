@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap');
+
+
+*{
+    font-family: montserrat, poppins;
+    text-decoration: none;
+}
+#navbar {
+    background-color: black;
+    color: white;
+    font-family: font-family, montserrat, poppins;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    height: 10%
+    
+
+}
+#logo{
+    width: 20%;
+    display: flex;
+    margin-left: 5%;
+
+}
+#logo img{
+    width: 60%;
+
+}
+#info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    margin-right: 5%;
+}
+#login {
+    background-color: black;
+    border: none;
+    color: white;
+}
+#signup {
+    background-color: black;
+    border: none;
+    color: white;
+}
+#nav2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    /* color: white; */
+    color: white;
+    margin-top: 4%;
+    background-color: rgb(48, 45, 45);
+   
+    height: 7%;
+    position: fixed;
+    width: 100%;
+    top: 1%;
+}
+#nav2 ul {
+    
+    display: flex;
+   
+}
+#nav2 ul:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width:700px){
+    #navbar{
+        flex-direction: row;
+
+    }
+    #info {
+        flex-direction: row;
+    }
+    #nav2 {
+        position: fixed;
+        top: 10%;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    #hamburger {
+        display: block;
+    }
+}
+@media screen and (max-width:450px){
+    #navbar{
+        flex-wrap: wrap;
+        /* height: auto; */
+        
+    }
+    #info {
+        flex-direction: row;
+    }
+    #hamburger {
+        display: block;
+    }
+}

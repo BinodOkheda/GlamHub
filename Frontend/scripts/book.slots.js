@@ -1,0 +1,1 @@
+const daysTag = document.querySelector(".days");

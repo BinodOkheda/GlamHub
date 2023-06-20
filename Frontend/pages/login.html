@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!-- fontawesome cd -->
+  <script src="https://kit.fontawesome.com/3af5a307c6.js" crossorigin="anonymous"></script>
+
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico"> -->
+
+</head>
+<body>
+    <div id="container">
+
+
+        <div id="left">
+
+            <div id="leftmaincont">  
+
+                <div id="logo" style="margin-top: 5px;">
+                    <img src="../images/logo_glam.png" alt="logo" id="logo_img"> <h3 >GLAM<span class="pinkhub">HUB</span> <br>  LOG<span class="pinkhub">IN</span></h3>
+                </div>
+
+
+                <!-- <h2>Login</h2> -->
+
+
+                <form id="formcontainer">
+                    <p>Email</p>
+                    <input type="email" id="email" class="rcheck" placeholder=" Enter your Email">
+
+
+
+                    <p>Password</p>
+                    <input type="password" id="password" class="rcheck" placeholder=" Enter your password">
+
+<!-- forget password -->
+
+                   <a href="./forgetpass.html"> <p id="forgot">Forgot your password?</p></a>
+                    <input type="submit" id="continue" value="Continue">
+
+
+                </form>
+
+
+
+
+                <p>New user? Create account <a href="./register.html" id="spanid">Register/Signup</a> </p>
+                <p ><a style="color: #0073ef;" href="../pages/admin.login.html"> Login as Admin</a>
+                </p>
+
+
+                <p id="or"> ----- Or Sign in with ----- </p>
+
+                <a href="https://dull-teal-pelican-vest.cyclic.app/user/auth/google/callback"><button class="echeck" id="gbtn"> <img src="../images/google-icon.png" alt="err"> Continue with Google</button></a>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>
+
+<script src="../scripts/login.js"></script>
